@@ -2,25 +2,33 @@
 
 
 ### Version Control Systems
-
-- Bitbucket/ Stash
+- **Bitbucket/ Stash**
 - Subversion
 
 
 ### Continuous Integration Server
+- **TeamCity**
+- Jenkins
 
-- TeamCity
 
-
-### Q/A 
-
-#### Unit Testing
+#### Q/A - Unit Testing
 - JUnit (Java)
 - NUnit (C#)
 
-#### Code Analysis
+
+#### Q/A - Code Analysis
 - SonarQube (static code analysis)
 
 
 ### Artefact repositories
 - SonarType Nexus
+- Myget (Nuget repository)
+
+
+### Deployment to environemnts
+- Chef
+
+
+### Notifications
+- E-Mail
+- Slack

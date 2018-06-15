@@ -17,14 +17,7 @@
 
 	<!-- For drawing charts-->
 	<link rel="stylesheet" href="css/mermaid.css">
-	<link rel="stylesheet" href="css/mermaid.dark.css">
-	<script src="lib/js/mermaid.min.js"></script>
-
-	<script>
-		mermaid.initialize({
-			startOnLoad: true
-		});
-	</script>
+	<link rel="stylesheet" href="css/mermaid.forest.css">
 
 	<!-- Printing and PDF exports -->
 	<script>
@@ -48,29 +41,56 @@
 			</section>
 			<section data-markdown="02_continuous_delivery.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="utf-8">
 			</section>
-			<section>
-				<div class="mermaid">
-					graph TD; Step 1 --> Step 2; Step 2 --> Step 3;
-				</div>
-			</section>
-			<!---
-
 			<section data-markdown="03_continuous_deployment.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="utf-8">
+			</section>
+			<section>
+				<section>
+					<h2>Flow diagrams</h2>
+				</section>			
+				<section>
+					<h2>Continuous Integration (1)</h2>
+					<div class="mermaid">
+						graph TD; 
+							id1(Code committed)-->id2(CI server detects new commit);
+							id2 --> id3(Build process is triggered); 							
+					</div>			
+				</section>
+				<section>
+						<h2>Continuous Integration (2)</h2>
+					<div class="mermaid">
+						graph TD; id4(Resolve dependencies); id4 --> id5(Compile code); id5 --> id6(Unit testing); id6 --> id7(Static code analysis);
+					</div>
+				</section>
+				<section>
+						<h2>Continuous Delivery</h2>
+					<div class="mermaid">
+						graph TD; id8(Continuous Integration); id8 --> id9(Upload artefact); id9 --> id10(Publish status); id10 -->id11(Integration/ Regression Testing)
+					</div>
+				</section>
+				<section>
+						<h2>Continuous Deployment</h2>
+					<div class="mermaid">
+						graph TD; id10(Continuous Delivery); id10 --> id11(Deployment to production);
+					</div>
+				</section>
+			</section>
+			<section data-markdown="05_frameworks_and_tools.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="utf-8">
 			</section>
 			<section data-markdown="04_further_reading.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="utf-8">
 			</section>
-		-->
-
-			<section data-markdown="05_frameworks_and_tools.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:" data-charset="utf-8">
-			</section>
-
-
 
 		</div>
 	</div>
 
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
+	<script src="lib/js/mermaid.min.js"></script>
+
+	<script>
+		mermaid.initialize({
+			startOnLoad: true
+		});
+	</script>
 
 	<script>
 		Reveal.initialize({

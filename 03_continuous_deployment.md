@@ -1,32 +1,15 @@
 ## Continuous Deployment
 
 
-### What is it about?
-
-<!---
-> Continuous deployment is the next step of continuous delivery: Every change that passes the automated tests is deployed to production automatically. Continuous deployment should be the goal of most companies that are not constrained by regulatory or other requirements.
-
-(Source: https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-dif)
---->
+### Prerequisite
+- Successful execution of continuous delivery process
 
 
-### Difference to Continuous Delivery
-
-TODO: Image
-
-(Source: https://puppet.com/blog/continuous-delivery-vs-continuous-deployment-what-s-diff)
-
-
-### Steps
-
-- Steps mentioned in Continuous Delivery
+### Workflow
 - Automated deployment to production environment
-- Canary
-- (Rolling) Red/Black
-- Highlander
+- Strategies for roll-out
+  - Canary
+  - (Rolling) Red/Black
+  - Highlander
+- Option to rollback in case of problem/ error
 
-
-### CD - Process, organization and architecture relation
-
-TODO: Add image
-(Source: Microservices Patterns)
