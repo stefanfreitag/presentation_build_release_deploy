@@ -15,4 +15,7 @@
   - Integration/ Regression Testing 
   - Deploy to a production-like environment aka *staging*
 
+![Continous Delivery Steps](./diagrams/continuous_delivery.png)
+
+
 If one of the quality gates is not passed, the build fails.

@@ -13,3 +13,5 @@
   - Highlander
 - Option to rollback in case of problem/ error
 
+![Continous Deployment Steps](./diagrams/continuous_deployment.png)
+

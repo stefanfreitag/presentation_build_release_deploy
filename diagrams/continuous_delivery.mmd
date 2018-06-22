@@ -1,0 +1,9 @@
+graph LR; 
+id1(Continuous Integration); 
+id1 --> id2(Upload artefact); 
+id2 --> id3(Publish status); 
+id3 -->id4(Integration/ Regression Testing)
+id2 -->|Error|id6(CD failed);
+id3 -->|Error|id6(CD failed);
+id4 -->|Error|id6(CD failed);
+id4 --> id7(CD successful)

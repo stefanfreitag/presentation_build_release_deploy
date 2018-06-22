@@ -1,0 +1,10 @@
+graph LR; 
+id1(Resolve dependencies); 
+id1 --> id2(Compile code); 
+id2 --> id3(Unit testing); 
+id3 --> id4(Static code analysis);
+id4 --> id6(Build successful);
+id1 -->|Error|id5(Buil failed);
+id2 -->|Error|id5(Buil failed);
+id3 -->|Error|id5(Buil failed);
+id4 -->|Error|id5(Buil failed);
