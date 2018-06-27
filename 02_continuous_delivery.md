@@ -4,7 +4,6 @@
 ### Prerequisite
 - Successful execution of continuous integration process
 
-
 ### Workflow
 - Upload the build artefact to a repository
 - Publish the build status
@@ -16,6 +15,5 @@
   - Deploy to a production-like environment aka *staging*
 
 ![Continous Delivery Steps](./diagrams/continuous_delivery.png)
-
 
 If one of the quality gates is not passed, the build fails.

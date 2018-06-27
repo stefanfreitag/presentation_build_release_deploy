@@ -2,14 +2,15 @@
 
 
 ### Version Control Systems
-- **Bitbucket/ Stash**
+- Bitbucket/ Stash
 - Subversion
+- Mercurial
 
 
 ### Continuous Integration Server
-- **TeamCity**
+- TeamCity
 - Jenkins
-
+- Travis
 
 #### Q/A - Unit Testing
 - JUnit (Java)
@@ -27,7 +28,6 @@
 
 ### Deployment to environemnts
 - Chef
-
 
 ### Notifications
 - E-Mail

@@ -4,13 +4,10 @@
 ### Prerequisite
 - Successful execution of continuous delivery process
 
-
 ### Workflow
 - Automated deployment to production environment
 - Strategies for roll-out
-  - Canary
-  - (Rolling) Red/Black
-  - Highlander
+  - e.g. Canary /  Red/Black
 - Option to rollback in case of problem/ error
 
 ![Continous Deployment Steps](./diagrams/continuous_deployment.png)
